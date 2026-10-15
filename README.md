@@ -1,8 +1,16 @@
-# Skiffly plugin for Claude Code, Cursor and Codex
-
 ![Skiffly](assets/logo.svg)
 
-Deploy apps, APIs, workers, databases and static sites to [Skiffly](https://skiffly.dev) straight from your AI coding agent. Ask "deploy this", and the agent creates the project, builds your GitHub repo or Docker image, adds a Postgres or Redis database with a persistent volume, sets environment variables, connects your domain and hands you a live HTTPS URL. When a deploy fails, it reads the build and runtime logs and fixes the cause.
+# Skiffly for Claude Code, Cursor and Codex
+
+Deploy from your AI coding agent. Say "deploy this" and get a live HTTPS URL.
+
+[Skiffly](https://skiffly.dev) hosts apps, APIs, workers, databases and static sites. With this plugin your agent can:
+
+- build and deploy a GitHub repo, a Docker image or a folder of HTML;
+- add Postgres, MySQL, Redis or MongoDB with a persistent volume and wire the connection string;
+- set environment variables and connect your own domain with automatic HTTPS;
+- read build and runtime logs, fix a failed deploy and redeploy;
+- move an app and its data from another platform or a VPS.
 
 ## What's inside
 
@@ -11,6 +19,13 @@ Deploy apps, APIs, workers, databases and static sites to [Skiffly](https://skif
   - `skiffly-deploy`: ship a repo, Docker image or static site; add databases, variables and custom domains.
   - `skiffly-debug`: find why a deployment failed or crashed, fix it and redeploy.
   - `skiffly-migrate`: move an app and its data from another platform or a VPS, then switch DNS.
+
+## Try it
+
+- "Deploy this repo to Skiffly and give me the URL."
+- "Add a Postgres database to my Skiffly project and set DATABASE_URL on the app."
+- "My last Skiffly deploy failed. Find out why and fix it."
+- "Publish this page as a website."
 
 ## Install
 
@@ -25,7 +40,7 @@ Then run `/mcp`, choose **skiffly → Authenticate** and allow access in the bro
 
 ### Cursor
 
-Install **Skiffly** from the Cursor Marketplace, or add the MCP server by hand in `~/.cursor/mcp.json`:
+Add the MCP server in `~/.cursor/mcp.json` (a Cursor Marketplace listing is on the way):
 
 ```json
 { "mcpServers": { "skiffly": { "url": "https://mcp.skiffly.dev/mcp" } } }
@@ -43,13 +58,6 @@ codex plugin add skiffly@skiffly
 ### Claude (web and desktop)
 
 Settings → **Connectors** → **Add custom connector**, name it `Skiffly`, URL `https://mcp.skiffly.dev/mcp`.
-
-## Try it
-
-- "Deploy this repo to Skiffly and give me the URL."
-- "Add a Postgres database to my Skiffly project and set DATABASE_URL on the app."
-- "My last Skiffly deploy failed. Find out why and fix it."
-- "Publish this page as a website."
 
 ## Requirements
 

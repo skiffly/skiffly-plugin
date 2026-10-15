@@ -1,7 +1,7 @@
 {
   "name": "skiffly",
   "displayName": "Skiffly",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Deploy apps, databases and static sites to Skiffly from your AI agent: create projects, ship GitHub repos or Docker images, set variables, add domains, read logs and fix failed deploys.",
   "author": { "name": "Skiffly", "email": "support@skiffly.dev" },
   "homepage": "https://skiffly.dev",
