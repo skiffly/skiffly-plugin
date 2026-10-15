@@ -1,4 +1,4 @@
-![Skiffly](assets/logo.svg)
+<img src="assets/logo.svg" alt="Skiffly" width="64" height="64">
 
 # Skiffly for Claude Code, Cursor and Codex
 
