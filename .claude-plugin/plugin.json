@@ -1,0 +1,11 @@
+{
+  "name": "skiffly",
+  "displayName": "Skiffly",
+  "version": "0.1.0",
+  "description": "Deploy apps, databases and static sites to Skiffly from your AI agent: create projects, ship GitHub repos or Docker images, set variables, add domains, read logs and fix failed deploys.",
+  "author": { "name": "Skiffly", "email": "support@skiffly.dev", "url": "https://skiffly.dev" },
+  "homepage": "https://skiffly.dev/docs/guides/mcp",
+  "repository": "https://github.com/skiffly/skiffly-plugin",
+  "license": "MIT",
+  "keywords": ["deploy", "hosting", "paas", "docker", "postgres", "static-site", "devops", "mcp"]
+}

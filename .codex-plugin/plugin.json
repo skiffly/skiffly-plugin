@@ -1,0 +1,26 @@
+{
+  "name": "skiffly",
+  "version": "0.1.0",
+  "description": "Deploy apps, databases and static sites to Skiffly from your AI agent: create projects, ship GitHub repos or Docker images, set variables, add domains, read logs and fix failed deploys.",
+  "author": { "name": "Skiffly", "url": "https://skiffly.dev" },
+  "homepage": "https://skiffly.dev",
+  "repository": "https://github.com/skiffly/skiffly-plugin",
+  "license": "MIT",
+  "keywords": ["deploy", "hosting", "paas", "docker", "postgres", "static-site", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json",
+  "interface": {
+    "displayName": "Skiffly",
+    "shortDescription": "Deploy apps, databases and sites to Skiffly",
+    "longDescription": "Deploy apps, databases and static sites to Skiffly from your AI agent: create projects, ship GitHub repos or Docker images, set variables, add domains, read logs and fix failed deploys. Sign in once through the browser (OAuth); no tokens to copy.",
+    "developerName": "Skiffly",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "websiteURL": "https://skiffly.dev",
+    "defaultPrompt": [
+      "Deploy this repo to Skiffly and give me the URL.",
+      "Why did my last Skiffly deploy fail? Fix it.",
+      "Add a Postgres database to my Skiffly project and wire DATABASE_URL."
+    ]
+  }
+}

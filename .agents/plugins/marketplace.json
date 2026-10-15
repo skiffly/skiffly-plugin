@@ -1,0 +1,12 @@
+{
+  "name": "skiffly",
+  "interface": { "displayName": "Skiffly" },
+  "plugins": [
+    {
+      "name": "skiffly",
+      "source": { "source": "local", "path": "./" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Developer Tools"
+    }
+  ]
+}

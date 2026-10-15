@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "skiffly": { "type": "http", "url": "https://mcp.skiffly.dev/mcp" }
+  }
+}

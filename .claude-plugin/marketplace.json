@@ -1,0 +1,8 @@
+{
+  "name": "skiffly",
+  "owner": { "name": "Skiffly", "email": "support@skiffly.dev", "url": "https://skiffly.dev" },
+  "metadata": { "description": "Official Skiffly plugin: deploy and operate apps on Skiffly from Claude Code." },
+  "plugins": [
+    { "name": "skiffly", "source": "./", "description": "Deploy apps, databases and static sites to Skiffly from your AI agent: create projects, ship GitHub repos or Docker images, set variables, add domains, read logs and fix failed deploys.", "category": "deployment", "homepage": "https://skiffly.dev" }
+  ]
+}
