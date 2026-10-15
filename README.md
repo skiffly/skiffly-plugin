@@ -69,7 +69,9 @@ This plugin contains only instructions (skills) and the address of the Skiffly M
 
 - The agent talks to `https://mcp.skiffly.dev`, operated by Skiffly, and only after you sign in and approve access. Requests act on your Skiffly account with the scopes you granted (`read`, `write`).
 - Data sent: what the agent passes to the tools you use, such as project and service names, repository names, environment variables you ask it to set, and site files you ask it to publish. Logs and settings of your services are returned to the agent.
-- Nothing is sent anywhere else. Access can be revoked at any time in the Skiffly dashboard: Settings → Developer → CLI sessions & connected apps.
+- Outside Skiffly, the skills only use tools you already have and only when you ask: `skiffly-deploy` can push your code to your own GitHub repository with `git`/`gh` before deploying, and `skiffly-migrate` can dump a database from your old host (for example with `pg_dump`) to restore it on Skiffly.
+- Skiffly keeps your projects, settings and variables for as long as your account has them; deleting a project removes them.
+- The plugin sends nothing anywhere else. Access can be revoked at any time in the Skiffly dashboard: Settings → Developer → CLI sessions & connected apps.
 - Privacy policy: https://skiffly.dev/privacy. Terms: https://skiffly.dev/terms.
 
 ## Support
